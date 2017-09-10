@@ -12,15 +12,25 @@
       ui:
         inlineEditable: true
         aloha:
-          placeholder: 'Überschrift hier eingeben...'
+          placeholder: '<h2>Enter headline here...</h2>'
           format:
+            p: true
             h1: true
             h2: true
             h3: true
             h4: true
+            strong: true
+            em: true
+            sub: true
+            sup: true
+            removeFormat: true
+          table:
+            table: true
           link:
             a: true
-
+          list:
+            ul: true
+            ol: true
 
 'Neos.Neos:ContentCollection':
   constraints:
