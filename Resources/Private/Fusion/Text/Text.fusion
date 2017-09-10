@@ -1,0 +1,3 @@
+prototype(CodeQ.ManualPage:Text) {
+	templatePath = 'resource://CodeQ.ManualPage/Private/Fusion/Text/Text.html'
+}

@@ -10,6 +10,7 @@
       constraints:
         nodeTypes:
           '*': false
+          'CodeQ.ManualPage:Text': true
           'CodeQ.ManualPage:YouTube': true
   constraints:
     nodeTypes:
