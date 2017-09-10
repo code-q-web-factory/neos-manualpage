@@ -2,8 +2,12 @@
 	margin: 40px auto 40px;
 	max-width: 800px;
 }
+.codeq-manualpage-manualpage .header {
+	margin-bottom: 50px;
+}
+
 .codeq-manualpage-manualpage .logo {
-	width: 100px;
+	width: 136px;
     padding-right: 10px;
 }
 
@@ -13,7 +17,7 @@
 .codeq-manualpage-manualpage h4,
 .codeq-manualpage-manualpage h5,
 .codeq-manualpage-manualpage h6 {
-	font-family: Futura, Helvetica, Tahoma, Verdana, sans-serif;
+	font-family: Helvetica, Tahoma, Verdana, sans-serif;
 	color: #7bbd8e;
 }
 
@@ -24,8 +28,8 @@
 }
 
 
-.codeq-manualpage-manualpage h1:not(.no-backslash):before,
-.codeq-manualpage-manualpage h2:not(.no-backslash):before {
+.codeq-manualpage-manualpage h1:not(.header):not(:empty):before,
+.codeq-manualpage-manualpage h2:not(.header):not(:empty):before {
     display: inline-block;
     content: "\\\\ ";
     /*content: "/ ";
