@@ -1,0 +1,5 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+<div class="codeq-manualpage-youtube container">
+	{neos:contentElement.editable(property: 'title')}
+	{video -> f:format.raw()}
+</div>

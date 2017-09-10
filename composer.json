@@ -1,0 +1,15 @@
+{
+	"name": "codeq/manualpage",
+	"type": "neos-package",
+	"description": "A backend manual page",
+	"license": "GPL-3.0+",
+	"require": {
+		"neos/neos": "*",
+		"jonnitto/plyr": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"CodeQ\\ManualPage\\": "Classes"
+		}
+	}
+}

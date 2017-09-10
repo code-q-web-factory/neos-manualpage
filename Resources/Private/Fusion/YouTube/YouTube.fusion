@@ -1,0 +1,6 @@
+prototype(CodeQ.ManualPage:YouTube) {
+	templatePath = 'resource://CodeQ.ManualPage/Private/Fusion/YouTube/YouTube.html'
+	video = Jonnitto.Plyr:YouTube {
+		@process.contentElementWrapping >
+	}
+}

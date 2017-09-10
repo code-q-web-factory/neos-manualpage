@@ -1,0 +1,34 @@
+'CodeQ.ManualPage:ManualPage':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    label: 'Manual page'
+    icon: icon-info-circle
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': false
+          'CodeQ.ManualPage:YouTube': true
+  constraints:
+    nodeTypes:
+      '*': false
+  properties:
+    _hiddenInIndex:
+      defaultValue: true
+      ui:
+        inspector:
+          group: null
+    _hiddenInIndex:
+      defaultValue: true
+      ui:
+        inspector:
+          group: null
+    hideFromMainMenu:
+      # this is part of the Neos-Skeleton, so it used support it out of the box
+      type: boolean
+      defaultValue: true
+      ui:
+        inspector:
+          group: null

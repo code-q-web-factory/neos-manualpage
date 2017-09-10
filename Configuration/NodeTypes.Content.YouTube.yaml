@@ -1,0 +1,28 @@
+'CodeQ.ManualPage:YouTube':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Jonnitto.Plyr:YouTube': true
+  ui:
+    label: 'YouTube Video'
+    group: 'general'
+    inlineEditable: true
+  properties:
+    title:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          placeholder: 'Überschrift hier eingeben...'
+          format:
+            h1: true
+            h2: true
+            h3: true
+            h4: true
+          link:
+            a: true
+
+
+'Neos.Neos:ContentCollection':
+  constraints:
+    nodeTypes:
+      'CodeQ.ManualPage:YouTube': false

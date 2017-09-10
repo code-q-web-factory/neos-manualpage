@@ -1,0 +1,11 @@
+include: **/*.fusion
+include: Override.fusion
+
+# Implement the same layout mechanism as rolandschuetz/Neos-Skeleton
+root {
+	manualPage {
+		condition = ${q(node).is('[instanceof CodeQ.ManualPage:ManualPage]')}
+		type = ${q(node).property('_nodeType') + '.Document'}
+		renderPath >
+	}
+}
