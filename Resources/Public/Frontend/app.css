@@ -1,15 +1,24 @@
 .codeq-manualpage-manualpage {
 	margin: 0 auto;
 	max-width: 800px;
-	padding: 20px 20px 40px;
+	padding: 25px 20px 40px;
 }
+
 .codeq-manualpage-manualpage .header {
 	margin-bottom: 50px;
 }
 
 .codeq-manualpage-manualpage .logo {
-	width: 136px;
+	width: 160px;
 	padding-right: 10px;
+}
+
+@media (min-width: 600px) {
+	.codeq-manualpage-manualpage .logo {
+		float: right;
+		margin-top: -21px;
+		padding-right: 0;
+	}
 }
 
 .codeq-manualpage-manualpage h1,
@@ -31,14 +40,19 @@
 .codeq-manualpage-manualpage h1:not(.header):not(:empty):before,
 .codeq-manualpage-manualpage h2:not(.header):not(:empty):before,
 .codeq-manualpage-manualpage h3:not(.header):not(:empty):before {
-    display: inline-block;
-    content: "\\\\ ";
-    /*content: "/ ";
-    font-family: Q;
-    font-weight: 900;*/
-    color: black;
-    transition: all .3s;
-    margin-right: 0.4em;
+	display: inline-block;
+	content: "";
+	background-image: url(/_Resources/Static/Packages/CodeQ.ManualPage/Frontend/images/code-q-backslash.jpg);
+	background-position: center;
+	background-size: auto 18px;
+	width: 32px;
+	height: 18px;
+	/*content: "/ ";
+	font-family: Q;
+	font-weight: 900;*/
+	color: black;
+	transition: all .3s;
+	margin-right: 0.2em;
 }
 
 .codeq-manualpage-manualpage p {
@@ -52,4 +66,23 @@
 
 .codeq-manualpage-youtube .jonnitto-plyr-container {
 	border-bottom: 6px solid #7bbd8e;
+}
+
+.codeq-manualpage-youtube .jonnitto-plyr-container .plyr__play-large {
+	
+}
+
+/**
+ * Better styling for the youtube play button
+ */
+.codeq-manualpage-youtube .jonnitto-plyr-container .plyr--youtube .plyr__play-large {
+	padding: 24px 34px;
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	cursor: pointer;
+}
+.codeq-manualpage-youtube .jonnitto-plyr-container .plyr--youtube .plyr__play-large svg {
+	display: none;
 }
