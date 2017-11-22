@@ -1,5 +1,12 @@
 {namespace neos=Neos\Neos\ViewHelpers}
 <div class="codeq-manualpage-youtube">
-	{neos:contentElement.editable(property: 'title')}
+	<f:security.ifHasRole role="Administrator">
+		<f:then>
+			{neos:contentElement.editable(property: 'title')}
+		</f:then>
+		<f:else>
+			{title -> f:format.raw()}
+		</f:else>
+	</f:security.ifHasRole>
 	{video -> f:format.raw()}
 </div>
