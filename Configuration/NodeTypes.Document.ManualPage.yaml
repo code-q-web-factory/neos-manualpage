@@ -4,6 +4,7 @@
   ui:
     label: 'Manual page'
     icon: icon-info-circle
+    position: 900
   childNodes:
     main:
       type: 'Neos.Neos:ContentCollection'
