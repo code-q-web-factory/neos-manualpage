@@ -59,6 +59,17 @@
 	font-family: Cambria, Times New Roman, serif;
 }
 
+.codeq-manualpage-manualpage a {
+	color: black;
+}
+
+.codeq-manualpage-manualpage a:active,
+.codeq-manualpage-manualpage a:hover,
+.codeq-manualpage-manualpage a:focus {
+	color: #7bbd8e;
+	text-decoration: underline;
+}
+
 .codeq-manualpage-text,
 .codeq-manualpage-youtube {
 	margin-bottom: 60px;
@@ -69,7 +80,6 @@
 }
 
 .codeq-manualpage-youtube .jonnitto-plyr-container .plyr__play-large {
-	
 }
 
 /**
