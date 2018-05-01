@@ -2,7 +2,7 @@
 ## Add your overrides to 3rd party fusion code here
 ###
 
-# Don't reference trading partners and model subcategories, since they don't have a real url
+# Don't reference manual pages in the Neos.SEO sitemap
 prototype(Neos.Seo:XmlSitemap) {
-    body.filter = '!CodeQ.ManualPage:ManualPage,Neos.Neos:Document'
+	body.filter = '!CodeQ.ManualPage:ManualPage,Neos.Neos:Document'
 }

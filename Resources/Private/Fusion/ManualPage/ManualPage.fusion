@@ -1,22 +1,3 @@
-prototype(CodeQ.ManualPage:ManualPage.Document) < prototype(Page) {
-	head {
-		stylesheets {
-			css = Neos.Fusion:Tag {
-				tagName = 'link'
-				attributes {
-					href = Neos.Fusion:ResourceUri {
-						package = 'CodeQ.Site'
-						path = 'resource://CodeQ.ManualPage/Public/Frontend/app.css'
-					}
-					type = 'text/css'
-					rel = 'stylesheet'
-				}
-			}
-		}
-	}
-	body = CodeQ.ManualPage:ManualPage
-}
-
 prototype(CodeQ.ManualPage:ManualPage) {
 	templatePath = 'resource://CodeQ.ManualPage/Private/Fusion/ManualPage/ManualPage.html'
 	title = ${node.properties.title}
