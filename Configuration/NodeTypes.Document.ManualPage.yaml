@@ -1,6 +1,7 @@
 'CodeQ.ManualPage:ManualPage':
   superTypes:
     'Neos.Neos:Document': true
+    'Jonnitto.Sitemap:RemoveFromSitemap': true
   ui:
     label: 'Manual page'
     icon: icon-info-circle

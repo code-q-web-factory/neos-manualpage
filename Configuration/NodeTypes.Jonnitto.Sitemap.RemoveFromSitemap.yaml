@@ -1,0 +1,7 @@
+##
+# If Jonittos sitemap package is used, we want to hide this page type
+# from the sitemap. If the package is not used we don't want to cause
+# any error, therefore we make sure the abstract type exists:
+##
+'Jonnitto.Sitemap:RemoveFromSitemap':
+  abstract: true
