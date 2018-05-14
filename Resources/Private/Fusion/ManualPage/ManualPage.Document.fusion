@@ -14,5 +14,6 @@ prototype(CodeQ.ManualPage:ManualPage.Document) < prototype(Page) {
 			}
 		}
 	}
+	bodyTag.attributes.class = 'codeq-manualpage-manualpage-body'
 	body = CodeQ.ManualPage:ManualPage
 }
