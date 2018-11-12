@@ -23,11 +23,6 @@
       ui:
         inspector:
           group: null
-    _hiddenInIndex:
-      defaultValue: true
-      ui:
-        inspector:
-          group: null
     hideFromMainMenu:
       # this is part of the Neos-Skeleton, so it used support it out of the box
       type: boolean
