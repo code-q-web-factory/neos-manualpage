@@ -1,7 +1,39 @@
-prototype(CodeQ.ManualPage:ManualPage) {
-	templatePath = 'resource://CodeQ.ManualPage/Private/Fusion/ManualPage/ManualPage.html'
-	title = ${node.properties.title}
-	main = Neos.Neos:ContentCollection {
-		nodePath = 'main'
+prototype(CodeQ.ManualPage:ManualPage) < prototype(Neos.Neos:Page) {
+	head {
+		stylesheets {
+			css = Neos.Fusion:Tag {
+				tagName = 'link'
+				attributes {
+					href = Neos.Fusion:ResourceUri {
+						package = 'CodeQ.Site'
+						path = 'resource://CodeQ.ManualPage/Public/Frontend/app.css'
+					}
+					type = 'text/css'
+					rel = 'stylesheet'
+				}
+			}
+		}
+	}
+	bodyTag.attributes.class = 'codeq-manualpage-manualpage-body'
+	body = Neos.Fusion:Component {
+		title = ${q(node).property('title')}
+		main = Neos.Neos:ContentCollection {
+			nodePath = 'main'
+		}
+		logoUri = Neos.Fusion:ResourceUri {
+			path = 'Frontend/images/code-q.png'
+			package = 'CodeQ.ManualPage'
+		}
+
+		renderer = afx`
+			<div class="codeq-manualpage-manualpage">
+				<h1 class="codeq-manualpage-manualpage-header">
+					<img class="codeq-manualpage-manualpage-logo" src={props.logoUri} alt="Code Q" />
+					{props.title}
+				</h1>
+
+				{props.main}
+			</div>
+		`
 	}
 }

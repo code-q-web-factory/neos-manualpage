@@ -1,37 +1,35 @@
+
 'CodeQ.ManualPage:YouTube':
   superTypes:
     'Neos.Neos:Content': true
     'Jonnitto.Plyr:YouTube': true
   ui:
     label: 'YouTube Video'
-    group: 'general'
+    group: general
     inlineEditable: true
   properties:
     title:
       type: string
       ui:
         inlineEditable: true
-        aloha:
-          placeholder: '<h2>Enter headline here...</h2>'
-          format:
-            p: true
-            h1: true
-            h2: true
-            h3: true
-            h4: true
-            strong: true
-            em: true
-            sub: true
-            sup: true
-            removeFormat: true
-          table:
-            table: true
-          link:
-            a: true
-          list:
-            ul: true
-            ol: true
-
+        inline:
+          editorOptions:
+            formatting:
+              p: true
+              h1: true
+              h2: true
+              h3: true
+              h4: true
+              strong: true
+              em: true
+              sub: true
+              sup: true
+              removeFormat: true
+              table: true
+              a: true
+              ul: true
+              ol: true
+            placeholder: '<h2>Enter headline here...</h2>'
 'Neos.Neos:ContentCollection':
   constraints:
     nodeTypes:

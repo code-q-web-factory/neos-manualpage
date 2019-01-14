@@ -4,5 +4,5 @@
 
 # Don't reference manual pages in the Neos.SEO sitemap
 prototype(Neos.Seo:XmlSitemap) {
-	body.filter = '!CodeQ.ManualPage:ManualPage,Neos.Neos:Document'
+	body.filter.@process = ${value ? ('!CodeQ.ManualPage:ManualPage,' + value) : '!CodeQ.ManualPage:ManualPage,Neos.Neos:Document'}
 }

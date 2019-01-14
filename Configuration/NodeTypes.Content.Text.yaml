@@ -1,3 +1,4 @@
+
 'CodeQ.ManualPage:Text':
   superTypes:
     'Neos.Neos:Content': true
@@ -12,27 +13,24 @@
       type: string
       ui:
         inlineEditable: true
-        aloha:
-          placeholder: '<p>Enter text here...</p>'
-          format:
-            p: true
-            h1: true
-            h2: true
-            h3: true
-            h4: true
-            strong: true
-            em: true
-            sub: true
-            sup: true
-            removeFormat: true
-          table:
-            table: true
-          link:
-            a: true
-          list:
-            ul: true
-            ol: true
-
+        inline:
+          editorOptions:
+            formatting:
+              p: true
+              h1: true
+              h2: true
+              h3: true
+              h4: true
+              strong: true
+              em: true
+              sub: true
+              sup: true
+              removeFormat: true
+              table: true
+              a: true
+              ul: true
+              ol: true
+            placeholder: '<p>Enter text here...</p>'
 'Neos.Neos:ContentCollection':
   constraints:
     nodeTypes:
