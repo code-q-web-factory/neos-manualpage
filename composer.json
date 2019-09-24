@@ -4,7 +4,7 @@
     "description": "A backend manual page",
     "license": "GPL-3.0+",
     "require": {
-        "neos/neos": "~4.0 || dev-master",
+        "neos/neos": "~4.0 || ~5.0 || dev-master",
         "jonnitto/plyr": "*"
     },
     "autoload": {
