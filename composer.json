@@ -4,7 +4,7 @@
     "description": "A backend manual page",
     "license": "GPL-3.0+",
     "require": {
-        "neos/neos": "~4.0 || ~5.0 || dev-master",
+        "neos/neos": "~4.0 || ~5.0 || ~7.0 || dev-master",
         "jonnitto/plyr": "*"
     },
     "autoload": {
@@ -82,7 +82,14 @@
             "Neos.Fusion-20180211175500",
             "Neos.Fusion-20180211184832",
             "Neos.Flow-20180415105700",
-            "Neos.Neos-20180907103800"
+            "Neos.Neos-20180907103800",
+            "Neos.Flow-20190425144900",
+            "Neos.Flow-20190515215000",
+            "Neos.Flow-20200813181400",
+            "Neos.Flow-20201003165200",
+            "Neos.Flow-20201109224100",
+            "Neos.Flow-20201205172733",
+            "Neos.Flow-20201207104500"
         ]
     }
 }
